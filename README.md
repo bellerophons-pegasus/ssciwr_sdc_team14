@@ -5,55 +5,79 @@ A repository for the course: [sustainable software development](https://github.c
 Create Repository:
 1. cloning existing
 ```
-    git clone <somue-URL>
+git clone <somue-URL>
 ```
-1. initialising a local directory as git repo
+2. initialising a local directory as git repo
 ```
-    git init
+git init
 ```
     
 Get newest stuff from remote
 ```
-    git pull
+git pull
 ```
     
 Show local status of repository
 ```
-    git status
+git status
 ```
     
 Display local differences compared to last pull
-    git diff
-    then exit with 'q'
+```
+git diff
+then exit with 'q'
+```
 
 ### Branches
 Create branch
-    git branch <some-branch-name>
+```
+git branch <some-branch-name>
+```
     
 Change to some branch for working on it
-    git checkout <some-branch-name>
+```
+git checkout <some-branch-name>
+```
 
 Push branch to remote
-    git push -u origin <some-branch-name>
+```
+git push -u origin <some-branch-name>
+```
 
 List local branches (those marked with * are checked out)
-    git branch 
+```
+git branch 
+```
 
 List remote branches
-    git branch -r
+```
+git branch -r
+```
 
 Delete local branch
-    git branch -d <some-branch-name>
+```
+git branch -d <some-branch-name>
+```
 
 Delete remote branch
-    git push origin -delete <some-branch-name>
+```
+git push origin -delete <some-branch-name>
+```
     
 Move changes to another branch: https://stackoverflow.com/questions/7217894/moving-changed-files-to-another-branch-for-check-in
     
 ### Stage, commit and push
 After changes are done add to staging
-    git add <some-file-path>
+```
+git add <some-file-path>
+```
+
 Commit the staged change
-    git commit -m 'a short meaningful message'
+```
+git commit -m 'a short meaningful message'
+```
+
 Push to remote
-    git push
+```
+git push
+```
