@@ -1,5 +1,8 @@
 # I/O module
 
+import pandas as pd
+import numpy as np
+
 def readfile(filepath, mode, separator='\t', datatype=float, skiprows=1):
     """Reads a given (csv) file with the indicated separator.
 
