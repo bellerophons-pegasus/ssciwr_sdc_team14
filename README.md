@@ -81,3 +81,7 @@ Push to remote
 ```
 git push
 ```
+
+## File naming and other conventions
+* [PEP8](https://www.python.org/dev/peps/pep-0008)
+* [Python Naming Conventions](https://visualgit.readthedocs.io/en/latest/pages/naming_convention.html)

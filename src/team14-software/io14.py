@@ -20,7 +20,7 @@ def readfile(filepath, mode, separator='\t', datatype=float, skiprows=1):
     return data
 
 def writefile(data, filepath, encoding='utf-8', header=False):
-    """Writes agiven dataframe to a csv file.
+    """Writes a given dataframe to a csv file.
         Arguments:
         xxx
     """
