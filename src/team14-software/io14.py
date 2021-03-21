@@ -1,3 +1,4 @@
+# io14.py
 # I/O module for team14-software
 
 import pandas as pd
@@ -5,8 +6,7 @@ import numpy as np
 
 def readfile(filepath, mode, separator='\t', datatype=float, skiprows=1):
     """Reads a given (csv) file with the indicated separator.
-
-    Arguments:
+        Arguments:
         filepath: path to the file including the filename
         mode:  indicates if data should be read into a dataframe ('df') or into a NumPy array ('npy')
         separator: optional, separator used in the file (e.g. '\t'), can also be a regular expression like '    |   |  '
@@ -18,3 +18,10 @@ def readfile(filepath, mode, separator='\t', datatype=float, skiprows=1):
     if mode == 'npa':
         data = np.loadtxt(filepath,datatype,skiprows)
     return data
+
+def writefile(data, filepath, encoding='utf-8', header=False):
+    """Writes agiven dataframe to a csv file.
+        Arguments:
+        xxx
+    """
+    data.to_csv(filepath, encoding=encoding, header=header)
