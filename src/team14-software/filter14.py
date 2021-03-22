@@ -7,7 +7,7 @@ def filterdata(data, threshold=0, keeplist=[]):
     """Filters data based on variance. If variance is below a given threshold, column is discarded
 
     :param data: The data to be filtered.
-    :type data: pandas dataframe (dict), optional
+    :type data: pandas dataframe (dict)
     :param threshold: Threshold used as limit.
     :type threshold: float , optional
     :param keeplist: List with names of columns to keep.
