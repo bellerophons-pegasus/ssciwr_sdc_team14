@@ -3,19 +3,21 @@
 
 import pandas as pd
 
-def filterdata(data, treshhold=0, keeplist=[]):
+def filterdata(data, threshold=0, keeplist=[]):
     """Filters data based on variance. If variance is below a given threshold, column is discarded
 
-        Arguments:
-            data: data to be filtered, as dataframe
-            treshhold: xx
-            keeplist: optional, a list with column names to keep
+    :param data: The data to be filtered.
+    :type data: pandas dataframe (dict), optional
+    :param threshold: Threshold used as limit.
+    :type threshold: float , optional
+    :param keeplist: List with names of columns to keep.
+    :type keeplist: list, optional
     """
 
     for i in data.keys():
         if i in keeplist:
             continue
-        if data[i].var() <= treshhold:
+        if data[i].var() <= threshold:
             print('Removing column: {}'.format(i))
             data = data.drop(i, axis=1)
     return data
