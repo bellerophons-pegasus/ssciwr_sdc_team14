@@ -37,7 +37,9 @@ extensions = ['sphinx.ext.todo',
     'sphinx.ext.ifconfig',
     'sphinx.ext.viewcode',
     'sphinx.ext.githubpages',
-    'sphinx.ext.autodoc']
+    'sphinx.ext.autodoc',
+    'sphinx.ext.napoleon',
+    'recommonmark']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['ytemplates']
