@@ -1,5 +1,5 @@
-# filter14.py
-# Module filter for team14-software
+# test_filter14.py
+# test for module filter14 with unittest
 
 import unittest
 import filter14 as f14
