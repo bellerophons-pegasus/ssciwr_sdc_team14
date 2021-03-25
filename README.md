@@ -11,17 +11,17 @@ git clone <somue-URL>
 ```
 git init
 ```
-    
+
 Get newest stuff from remote
 ```
 git pull
 ```
-    
+
 Show local status of repository
 ```
 git status
 ```
-    
+
 Display local differences compared to last pull
 ```
 git diff
@@ -33,7 +33,7 @@ Create branch
 ```
 git branch <some-branch-name>
 ```
-    
+
 Change to some branch for working on it
 ```
 git checkout <some-branch-name>
@@ -46,7 +46,7 @@ git push -u origin <some-branch-name>
 
 List local branches (those marked with * are checked out)
 ```
-git branch 
+git branch
 ```
 
 List remote branches
@@ -63,9 +63,9 @@ Delete remote branch
 ```
 git push origin -delete <some-branch-name>
 ```
-    
+
 Move changes to another branch: https://stackoverflow.com/questions/7217894/moving-changed-files-to-another-branch-for-check-in
-    
+
 ### Stage, commit and push
 After changes are done add to staging
 ```
@@ -85,3 +85,20 @@ git push
 ## File naming and other conventions
 * [PEP8](https://www.python.org/dev/peps/pep-0008)
 * [Python Naming Conventions](https://visualgit.readthedocs.io/en/latest/pages/naming_convention.html)
+
+## Documentation with Sphinx
+
+initialise documentation with: (when you are in doc); executing it once suffices unless new modules come in
+```
+sphinx-apidoc -o source/ ../src/
+```
+
+clean everything; execute in doc (`where make.bat` and `Makefile` lie)
+```
+make clean
+```
+
+update html with docstrings
+```
+make html
+```
