@@ -10,7 +10,7 @@ Welcome to team14-software's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-intro
+   intro
 
 
 Indices and tables

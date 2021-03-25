@@ -5,27 +5,26 @@ import pytest
 import pandas as pd
 import filter14 as f14
 
-class build_testval:
+class DF:
         def __init__(self, testdict):
             self.testdict = testdict
 
         def init_df(self):
-            testdata =
-            test_df = pd.DataFrame(data=testdata)
+            test_df = pd.DataFrame(data=testdict)
             return test_df
 
 # runs this function before the test starts;
 # here a variable for testing is defined
-@pytest.fixture
-def test_wf():
+@pytest.fixture(testval)
+def test_df():
     testval = build_testval({'col1': [1, 2], 'col2': [3, 4]})
-    return obj.init_df()
+    return DF.init_df(testval)
 
 
 
-def test_filterdata(testval):
+def test_filterdata(testval, refval):
      """Tests for filterdata"""
-     assert calc_auto(testval) == refval
+     assert len(filterdata(testval)) == len(refval)
 #
 #         test1 = f14.filterdata(test_df)
 #         self.assertEqual(len(test1.columns), len(test_df.columns))
