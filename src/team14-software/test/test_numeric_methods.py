@@ -1,14 +1,21 @@
 import pytest
 import numpy as np
-from team14-software import numeric_methods as nl
+import numeric_methods as nl
 
-class build_wf:
-    def __init__(self, dim1, dim2):
-        self.dim1 = dim1
-        self.dim2 = dim2
+array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+@pytest.fixture
+def test():
+    return np.fft.fft(array)
+
+@pytest.fixture
+def ref():
+    return abs(np.fft.fft(array)**2)
+
 
 def test_get_autocorrelation():
     """
     test auto correlation function
 
     """
+
+    assert np.array_equal(nl.get_power_spectrum(array), ref)
