@@ -1,6 +1,8 @@
 # ssciwr_sdc_team14
 A repository for the course: [sustainable software development](https://github.com/ssciwr/sustainable_development_course) (team 14)
 
+Documentation on [readthedocs](https://ssciwr-sdc-team14.readthedocs.io/)
+
 ## Useful commands for working wit git
 Create Repository:
 1. cloning existing
