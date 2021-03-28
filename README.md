@@ -105,6 +105,16 @@ update html with docstrings
 make html
 ```
 
+### Including extra text
+
+#### Inside rst files
+* Just add additional content in [rst syntax](https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#rst-primer)
+* You can also create your own rst pages in `source` and add them by including them in the relevant table of contents (`toctree`). E.g. in `index.rst`
+
+#### Additional md files
+* You will need the additional module [recommonmark](https://www.sphinx-doc.org/en/master/usage/markdown.html)
+* Then you can create your md pages and add them by including them in the relevant table of contents (`toctree`).
+
 ### Sphinx troubleshooting
 
 If for some reason not all modules are properly parsed by Sphinx (i.e. an rst file is missing for them) you will have take manual action.
