@@ -9,7 +9,7 @@ def readfile(filepath, mode, separator='\t', datatype=float, skiprows=1):
 
         Args:
             filepath (str): path to the file including the filename
-            mode (str):  indicates if data should be read into a Pandas dataframe ('df') or into a NumPy array ('npy')
+            mode (str):  indicates if data should be read into a Pandas dataframe ('df') or into a NumPy array ('npa')
             separator (str): optional, separator used in the file (e.g. '\t'), can also be a regular expression like '    |   |  '
             datatype (type): optional,
             skiprows (int): optional
@@ -20,7 +20,7 @@ def readfile(filepath, mode, separator='\t', datatype=float, skiprows=1):
     if mode == 'df':
         data = pd.read_table(filepath, separator, engine='python')
     if mode == 'npa':
-        data = np.loadtxt(filepath,datatype,skiprows)
+        data = np.loadtxt(filepath, dtype=datatype, skiprows=skiprows)
     return data
 
 def writefile(data, filepath, encoding='utf-8', header=False):
