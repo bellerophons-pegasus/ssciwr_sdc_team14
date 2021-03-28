@@ -5,10 +5,11 @@ import pandas as pd
 
 def correlatedata(data, corrmethod='pearson', dropcols=[]):
     """Compute pairwise correlation of data with pandas.DataFrame.corr
-    :param data: Data to be correlated.
-    :type data: pandas dataframe (dict)
-    :param corrmethod: Method to be used for correlation (pandas: pearson, kendall, spearman).
-    :type corrmethod: string, optional
+
+    Args:
+        data (pandas dataframe): Data to be correlated.
+        corrmethod (str): Method to be used for correlation (pandas: pearson, kendall, spearman), defaults to 'pearson'
+        dropcols (list): A list with labels of columns to be dropped from the dataframe, defaults to []
     """
 
     # correlate data

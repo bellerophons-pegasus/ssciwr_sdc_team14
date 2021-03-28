@@ -12,6 +12,8 @@ def filterdata(data, threshold=0, keeplist=[]):
     :type threshold: float , optional
     :param keeplist: List with names of columns to keep.
     :type keeplist: list, optional
+    :returns: A filtered dataframe, where columns with variance below the threshold were removed
+    :rtype: dataframe
     """
 
     for i in data.keys():
