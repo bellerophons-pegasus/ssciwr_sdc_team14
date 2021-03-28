@@ -104,3 +104,22 @@ update html with docstrings
 ```
 make html
 ```
+
+### Sphinx troubleshooting
+
+If for some reason not all modules are properly parsed by Sphinx (i.e. an rst file is missing for them) you will have take manual action.
+In `source` open `modules.rst`. After the lines starting with `.. toctree::` add your module name to the list of modules.
+
+```src
+===
+
+.. toctree::
+   :maxdepth: 4
+
+   io14
+   filter14
+   numeric_methods
+   statistics14
+   <yourModuleHere>
+
+```
