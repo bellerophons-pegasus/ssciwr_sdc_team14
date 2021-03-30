@@ -1,10 +1,19 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*- #
 # filter14.py
-# Module filter for team14-software
 
-import pandas as pd
+"""
+A module to filter data.
+
+Currently only has function filterdata to drop columns based on threshold
+"""
+
+import pandas
+
 
 def filterdata(data, threshold=0, keeplist=[]):
-    """Filters data based on variance. If variance is below a given threshold, column is discarded
+    """Filter data based on variance. If variance is below a given\
+    threshold, column is discarded.
 
     :param data: The data to be filtered.
     :type data: pandas dataframe (dict)
@@ -12,10 +21,10 @@ def filterdata(data, threshold=0, keeplist=[]):
     :type threshold: float , optional
     :param keeplist: List with names of columns to keep.
     :type keeplist: list, optional
-    :returns: A filtered dataframe, where columns with variance below the threshold were removed
+    :returns: A filtered dataframe, where columns with variance below\
+              the threshold were removed
     :rtype: dataframe
     """
-
     for i in data.keys():
         if i in keeplist:
             continue
