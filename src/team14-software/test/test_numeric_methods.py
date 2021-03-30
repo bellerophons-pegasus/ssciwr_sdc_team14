@@ -17,6 +17,7 @@ def test():
 def ref():
     return abs(np.fft.fft(array)**2)
 
+
 @pytest.mark.skip(reason="does not succeed with all")
 def test_get_autocorrelation():
     """
