@@ -39,3 +39,9 @@ jobs:
       run: |
         cd src
         python -m pytest
+# if planning to publish doc via gitHub pages
+# include sphinx-build and uncomment following
+#    - name: build Documentation
+#      run: |
+#        cd docs
+#        make html
