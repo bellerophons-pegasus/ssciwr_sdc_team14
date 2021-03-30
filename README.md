@@ -133,3 +133,7 @@ In `source` open `modules.rst`. After the lines starting with `.. toctree::` add
    <yourModuleHere>
 
 ```
+
+## other useful links
+
+* https://ssc.iwr.uni-heidelberg.de/resources
