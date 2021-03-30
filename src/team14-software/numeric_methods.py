@@ -1,13 +1,23 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*- #
+
+"""
+A module for numeric analyses.
+
+Does stuff.
+"""
+
 import numpy as np
 
 
 def get_time_and_update_data(data):
-    """"Outputs a time column vector and the updated data array without time column
+    """Output a time column vector and the updated data array\
+     without a time column.
 
-    :param data: Input data array that contains time column with corresponding data for each time step
+    :param data: Input data array that contains time column with\
+                 corresponding data for each time step
     :return: 1D time array with the corresponding 2D updated data array
     """
-
     time = data[:, 0]
     new_data = np.delete(data, 0, 1)
 
@@ -15,24 +25,23 @@ def get_time_and_update_data(data):
 
 
 def get_complex_array(array):
-    """Outputs a complex array from the input array.
+    """Output a complex array from the input array.
 
-    :param array: array that has real parts in columns 0, 2, 4,... and imaginary part in columns 1, 3, 5,...
+    :param array: array that has real parts in columns 0, 2, 4,... \
+                  and imaginary part in columns 1, 3, 5,...
     :return: An array with complex data type
     """
-
     complex_array = array[:, 0::2] + 1j * array[:, 1::2]
 
     return complex_array
 
 
 def get_autocorrelation(array):
-    """ Calculates the auto-correlation function for a given array
+    """Calculate the auto-correlation function for a given array.
 
     :param array: a 2D array
     :return: auto-correlation vector
     """
-
     auto_corr_matrix = []
     for i in range(1, len(array)):
         corr = np.multiply(array[0, :], array[i, :])
@@ -43,12 +52,11 @@ def get_autocorrelation(array):
 
 
 def get_power_spectrum(array):
-    """" Calculates DFT and power spectrum from the given array.
+    """Calculate DFT and power spectrum from the given array.
 
     :param array: a 2D array
     :return: DFT array and the power spectrum
     """
-
     fourier = np.fft.fft(array)
     power = abs(fourier)**2
 
