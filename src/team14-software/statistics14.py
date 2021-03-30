@@ -8,7 +8,7 @@ Module for statistic analyses.
 Does correlation and euclidean distance.
 """
 
-import pandas
+# import pandas
 import numpy as np
 
 

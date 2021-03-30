@@ -8,7 +8,7 @@ A module to filter data.
 Currently only has function filterdata to drop columns based on threshold
 """
 
-import pandas
+# import pandas
 
 
 def filterdata(data, threshold=0, keeplist=[]):
