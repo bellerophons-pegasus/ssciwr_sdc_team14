@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*- #
 # statistics14.py
+# docstring with sphinx and napoleon
 
 """
 Module for statistic analyses.

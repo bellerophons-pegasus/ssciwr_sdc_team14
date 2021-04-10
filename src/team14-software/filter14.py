@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*- #
 # filter14.py
+# docstring with sphinx without plugin for formatting
 
 """
 A module to filter data.

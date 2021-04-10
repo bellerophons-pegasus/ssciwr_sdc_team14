@@ -1,7 +1,17 @@
 # ssciwr_sdc_team14
 A repository for the course: [sustainable software development](https://github.com/ssciwr/sustainable_development_course) (team 14)
 
-Documentation on [readthedocs](https://ssciwr-sdc-team14.readthedocs.io/)
+The task was to create a small software package with some modules in Python including documentation, testing and automated actions. The aim of the course was to learn what constitutes sustainable software and put this into practice with the provided example.
+
+The software example was given in unit 1 in a [Jupyter Notebook](). After working on it in the notebook, we created a module layout via [a Google Jamboard](https://jamboard.google.com/d/1s-L8ETmGIws289NFmPOz2I0ORVLDQs6y5oH2lCLe4ac/viewer). For the modules we discerned, we created issues on this GitHub repository and assigned them to the responsible team members. The documentation is done with Sphinx and is published on [readthedocs](https://ssciwr-sdc-team14.readthedocs.io/).
+
+## Things we could have done better
+
+* Think twice or thrice about naming conventions. This becomes quite important when packaging and pushing to e.g. PIP.
+* Not only focus on the individual tasks, but have a more active exchange in the team and e.g. explain what we did in the code. Feedback and questions from the team members can help in detecting code issues in terms of functioning, readability, interoperability, and understandability.
+* Think about input and output (e.g. locations).
+
+Below follows a list of commands and useful links and comments for working with git and Sphinx.
 
 ## Useful commands for working wit git
 Create Repository:
