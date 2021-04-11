@@ -14,7 +14,7 @@ import io14 as io14
 import filter14 as f14
 import statistics14 as s14
 import visualise14 as v14
-import numeric_methods as nm
+# import numeric_methods as nm
 
 
 if __name__ == "__main__":
