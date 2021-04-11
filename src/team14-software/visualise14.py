@@ -43,7 +43,7 @@ def plotseaborn(data, caption, x='time', y='value', hue='variable',
     """Plot data with seaborn.
 
     Args:
-        data (pandas dataframe, long format): Data to be plotted.
+        data (pandas dataframe, long format): Data to be plotted in long format.
         caption (str): The caption for the figure.
         x (str): optional, column for x-axis
         y (str): optional, column for y-axis
@@ -51,25 +51,34 @@ def plotseaborn(data, caption, x='time', y='value', hue='variable',
         colors.
         outFile (str): optional, Path to the output file.
     """
-# TODO
-# Plot the remaining columns. Seaborn prefers "long format" (one column for \
-# all measurement values, one column to indicate the type) as input, whereas\
-# the cvs is in "wide format" (one column per measurement type).
-
-# wide to long format
-#    npop_longFormat = pd.melt(df_npopfiltered, id_vars=['time'])
-# sb.lineplot(x='time', y='value', hue='variable', data = npop_longFormat)
-
     sb.lineplot(x=x, y=y, hue=hue, data=data)
     # place legend
     plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
     plt.show()
     plt.savefig(outFile)
 
-# plt.bar(x, out_dist)
-# plt.xticks(x, ('x', 'y', 'z'))
-# plt.xlabel("table index")
-# plt.ylabel("euclidean distance")
-# plt.legend()
-# plt.show()
-# plt.savefig("euclideandistance.pdf")
+
+def plotplt(data, caption, mode, x='time', y='value', hue='variable',
+            outFile='pltFig.pdf'):
+    """Plot data with matplotlib.
+
+    Args:
+        data (pandas dataframe, long format): Data to be plotted.
+        caption (str): The caption for the figure.
+        mode (str): 'bar' for bar plot, 'plot' for standard plot
+        x (str): optional, column for x-axis
+        y (str): optional, column for y-axis
+        hue (str): optional, column for grouping to produce lines in different \
+        colors.
+        outFile (str): optional, Path to the output file.
+    """
+    if mode == 'bar':
+        xax = range(0, len(data))
+        plt.bar(xax, data, label=caption)
+    if mode == 'plot':
+        plt.plot(data, label=caption)
+    plt.xlabel(x)
+    plt.ylabel(y)
+    plt.legend()
+    plt.show()
+    plt.savefig(outFile)
