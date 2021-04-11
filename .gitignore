@@ -132,3 +132,6 @@ dmypy.json
 #custom ignores
 .pre-commit-config.yaml
 .idea/
+linlogFig.pdf
+sbFig.pdf
+pltFig.pdf
