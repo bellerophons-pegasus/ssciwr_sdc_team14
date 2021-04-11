@@ -40,7 +40,7 @@ if __name__ == "__main__":
     # task 4
     io14.writefile(corr_npop, path.join(fileDir, 'npop_processed.csv'))
     # task 5 (not complete)
-    arr = io.14readfile(path.join(fileDir, 'table.dat'), 'npa')
+    arr = io14.readfile(path.join(fileDir, 'table.dat'), 'npa')
     arr = np.nan_to_num(arr)
     # main('efield.t', 'data/', 'output/')
     # main('nstate_i.t', 'data/', 'output/')

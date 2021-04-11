@@ -11,8 +11,8 @@ A collection of functions to plot data and save the resulting figure as a pdf.
 
 import matplotlib.pyplot as plt
 import seaborn as sb
-import pandas
-import numpy
+# import pandas
+# import numpy
 
 
 def plotlinlog(data, caption, figsize=(6, 9), outFile='linlogFig.pdf'):
