@@ -133,3 +133,6 @@ dmypy.json
 .pre-commit-config.yaml
 .idea/
 pdfPlots/
+linlogFig.pdf
+sbFig.pdf
+pltFig.pdf
