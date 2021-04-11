@@ -5,6 +5,12 @@ The task was to create a small software package with some modules in Python incl
 
 The software example was given in unit 1 in a [Jupyter Notebook](). After working on it in the notebook, we created a module layout via [a Google Jamboard](https://jamboard.google.com/d/1s-L8ETmGIws289NFmPOz2I0ORVLDQs6y5oH2lCLe4ac/viewer). For the modules we discerned, we created issues on this GitHub repository and assigned them to the responsible team members. The documentation is done with Sphinx and is published on [readthedocs](https://ssciwr-sdc-team14.readthedocs.io/).
 
+## Related repositories
+
+* [Example solution](https://github.com/iulusoy/team0)
+* [Example repository for GitHub actions](https://github.com/bellerophons-pegasus/actions-example-iulusoy)
+* [Other teams](https://github.com/users/iulusoy/projects/1)
+
 ## Things we could have done better
 
 * Think twice or thrice about naming conventions. This becomes quite important when packaging and pushing to e.g. PIP.
